@@ -302,8 +302,8 @@ void showList() {
   listGenerate.removeAt(1);
   print('listGenerate = $listGenerate');
 
-  //todo List.of(Iterable<E> elements, { bool growable: true })
-  //todo List.unmodifiable(Iterable elements)
+  //TODO List.of(Iterable<E> elements, { bool growable: true })
+  //TODO List.unmodifiable(Iterable elements)
 
   //list长度
   int listFilledLength = listFilled.length;
