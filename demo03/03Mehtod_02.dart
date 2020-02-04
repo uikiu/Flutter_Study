@@ -6,6 +6,19 @@
 main(List<String> args) {
   // arrowMethod();
   // showAnonymousMehthod();
+
+    /**
+ * 自执行匿名函数
+ * 程序加载，自动执行
+ * 定义位置：在某个函数内部
+ * 格式如下：
+ * (匿名函数)();
+ */
+
+((){
+  print('我是自执行匿名函数');
+})();
+ 
 }
 void separator(){
   print('\n--------------separator--------------');
@@ -76,14 +89,4 @@ void showAnonymousMehthod(){
 
 
 
-  /**
- * 自执行匿名函数
- * 程序加载，自动执行
- * 格式如下：
- * (匿名函数)();
- */
 
-// ((){
-//   print('我是自执行匿名函数');
-// })();
- 
