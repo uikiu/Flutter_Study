@@ -1,5 +1,27 @@
 # 类相关
 
+dart中类的初始化可以省略new关键字,直接写**类名+括号**，这个有点类似于领域语言
+
+```dart
+    return Center(
+
+        /**
+       * child: 命名参数构造函数
+       * 对象的初始化可以声明new
+       */
+        child: Text(
+      'Hello Kitty',
+      textDirection: TextDirection.ltr, //文本显示方式：从左至右
+    ));
+```
+
+```dart
+
+
+```
+
+非匿名箭头函数
+
 ## 构造函数
   /**
    * 命名构造函数:可以有多个
