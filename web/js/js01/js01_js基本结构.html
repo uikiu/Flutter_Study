@@ -22,8 +22,8 @@
 
 	<h3>js书写注意事项</h3>
 	<p>1. js是可直接内嵌到html页面中，js插入到html中后由浏览器解析执行</p>
-	<p>2. js能够直接写入HTML输出流中</p>
-	<p>3. 在html写js需要用script包起来</p>
+	<p>2. js能在页面加载时向HTML的body中写文本</p>
+	<p>3. html中js脚本需要用script包起来，js可以在header和body中。通常做法是统一处理：统一放到header中或者页面底部</p>
 
 	<h3>js交互因素</h3>
 	<p>js用于控制行为，所以通常用于变更html页面内容。所以js函数依赖于html页面元素，以及js函数定义，和触发js函数的button。总体来说：</p>
@@ -34,7 +34,7 @@
 	</ul>
 	<hr>
 
-	<!-- script直接输出html元素 -->
+	<!-- JavaScript 会在页面加载时向 HTML 的 <body> 写文本： -->
 	<script>
 		document.write("<h1>这是一个标题</h1>");
 		document.write("<p>这是一个段落</p>");
