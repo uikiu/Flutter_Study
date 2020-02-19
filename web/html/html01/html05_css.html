@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>html05_css</title>
+
+    <!-- 内部样式表 -->
+    <style type="text/css">
+        h1 {
+            color: red;
+        }
+
+        p {
+            color: blue;
+            font-size: xx-small;
+        }
+    </style>
+
+    <!-- 外部引用：外部样式表 -->
+    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
+</head>
+
+<body>
+    <h1>文本样式H1</h1>
+
+    <P>文本样式p</P>
+
+    <a href="http://www.android001.com/" target="_blank" , style="text-decoration: none;">修改超链接的文字载体的样式，让其不显示下划线</a>
+
+    <hr>
+
+
+    <h1>css添加到html方式</h1>
+    <ul>
+        <li>内联样式：在html中使用style属性</li>
+        <li>内部样式表：在html文档头部header中使用style元素包含css</li>
+        <li>外部引用：使用外部css文件</li>
+    </ul>
+
+    <hr>
+
+    <h2>内联样式</h2>
+    <h3>内联设置背景</h3>
+    <h6 style="background-color: red;">这是一个h6标题，使用了内联样式background-color</h6>
+    <p style="background-color: green;">这是一个p段落，使用了内联样式background-color</p>
+    <br>
+    <h3>内联设置字体</h3>
+    <!-- font-family（字体），color（颜色），和font-size（字体大小） -->
+    <h6 style="font-family:verdana;">一个h6标题,使用了内联字体设置font-family</h6>
+    <p style="font-family:arial;color:red;font-size:5px;">一个段落,使用了内联字体设置font-family和颜色color以及字体大小font-size</p>
+    <br>
+    <h3>内联设置文本对齐</h3>
+    <h6 style="text-align:center;">居中对齐的标题</h6>
+    <p>这是一个段落。</p>
+</body>
+
+</html>

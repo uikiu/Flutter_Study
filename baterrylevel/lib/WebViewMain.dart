@@ -35,7 +35,7 @@ class WebViewPage extends StatefulWidget {
 
 class _WebViewPageState extends State<WebViewPage> {
 
-  //
+  //flutter收到js消息
   JavascriptChannel _alertJavascriptChannel(BuildContext context){
     return JavascriptChannel(
         name: 'Toast',
