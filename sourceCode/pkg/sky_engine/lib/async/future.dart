@@ -36,6 +36,16 @@ part of dart.async;
 /// As a corollary, `FutureOr<Object>` is equivalent to
 /// `FutureOr<FutureOr<Object>>`, `FutureOr<Future<Object>>` is equivalent to
 /// `Future<Object>`.
+/// 
+/// ----------------------------------------------------------------------------------------------------
+/// https://www.ccc5.cc/2462.html
+/// FuttureOr代表Future<T>或者T
+/// 此类声明一个内部私有futre-or-value通用类型对外的公共替身。引用这个类以便解析内部的类型。
+/// 
+/// 私有构造函数的标准形式：_代表私有。所以不可继承、实现、混入。
+/// ```dart
+/// ClassName._(){}
+/// ```
 abstract class FutureOr<T> {
   // Private generative constructor, so that it is not subclassable, mixable, or
   // instantiable.
@@ -43,6 +53,8 @@ abstract class FutureOr<T> {
     throw new UnsupportedError("FutureOr can't be instantiated");
   }
 }
+
+///分割线----------------------------------------------------------------------------------------------------------------------
 
 /**
  * An object representing a delayed computation.
@@ -146,6 +158,10 @@ abstract class FutureOr<T> {
  * A future may also fail to ever complete. In that case, no callbacks are
  * called.
  */
+
+///-----------------------------------------------------------------------------
+///一个对象代表延期运算。
+///Future通常代表一个潜在的值，或者错误，将在将来某个时间提供。
 abstract class Future<T> {
   /// A `Future<Null>` completed with `null`.
   static final _Future<Null> _nullFuture =
