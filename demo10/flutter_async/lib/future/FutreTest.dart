@@ -48,9 +48,12 @@ class _FutureTestPage1State extends State<FutureTestPage1> {
 
         children: <Widget>[
           MaterialButton(
-            textColor: Colors.red,
+            color: Colors.blue,
+            textColor: Colors.white,
+            child: Text('吻我'),
             onPressed: (){
               //TODO something
+
               filmListFutue.then((film_list) =>print('film_list:  ${film_list.toString()}'))
                   .catchError((err)=>print(err));
 
