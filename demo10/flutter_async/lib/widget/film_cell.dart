@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_async/bean/film_list.dart';
+import 'package:flutter_async/bean/FilmList.dart';
 
 class FilmCell extends StatelessWidget {
   Subjects subjects;

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_async/bean/film_list.dart';
+import 'package:flutter_async/bean/FilmList.dart';
 
 import 'film_cell.dart';
-//import 'package:flutter_speedcode/async_demo/bean/film_list.dart';
+//import 'package:flutter_speedcode/async_demo/bean/FilmList.dart';
 
 
 class Film extends StatefulWidget {
-  film_list film;
+  FilmList film;
 
   Film(this.film);
 

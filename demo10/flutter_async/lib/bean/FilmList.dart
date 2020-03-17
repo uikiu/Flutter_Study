@@ -1,14 +1,16 @@
 //"http://api.douban.com/v2/movie/in_theaters?apikey=0df993c66c0c636e29ecbb5344252a4a&start=0&count=10"
-class film_list {
+import 'dart:convert';
+
+class FilmList {
   int count;
   int start;
   int total;
   List<Subjects> subjects;
   String title;
 
-  film_list({this.count, this.start, this.total, this.subjects, this.title});
+  FilmList({this.count, this.start, this.total, this.subjects, this.title});
 
-  film_list.fromJson(Map<String, dynamic> json) {
+  FilmList.fromJson(Map<String, dynamic> json) {
     count = json['count'];
     start = json['start'];
     total = json['total'];
