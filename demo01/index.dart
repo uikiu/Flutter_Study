@@ -261,7 +261,7 @@ void showList() {
   /* 
   通过new创建list数组,并指定数据类型
   */
-  List newList = new List<String>();
+  List newList = List.filled(3, 'hello kitty',growable: true);
   newList.add('张三');
   newList.add('李四');
   newList.add('王五');
