@@ -1,0 +1,82 @@
+<html>
+
+<title>
+    <meta charset="utf-8">
+    <title>css基本语法</title>
+    <style>
+        h1 {
+            background-color: blue;
+            color: white;
+        }
+
+        h2 {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        h3 {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        p {
+            background-color: white;
+            text-align: left;
+        }
+
+
+        #para1{
+            text-align: start;
+            color: red;
+        }
+
+        h1.center {
+            text-align: center;
+        }
+
+        p.center {
+            text-align: center;
+            color: goldenrod;
+        }
+    </style>
+</title>
+
+<body>
+    <h1 class="center">什么是CSS</h1>
+    <ul>
+        <li>CSS:Cascading Style Sheets</li>
+        <li>定义如何显示html元素样式</li>
+        <li>解耦内容和样式</li>
+        <li>CSS样式可叠加</li>
+    </ul>
+
+    <h1 class="center">CSS语法格式</h1>
+    <img src="./images/css_syntax.jpg" alt="css基本语法">
+    <p>css基本语法包含两部分：选择器和结构体。选择器通常是html元素。结构体是由<b>分号</b>分隔的<b>样式声明</b></p>
+
+    <h2>样式声明</h2>
+    <p>样式声明用于描述选择器（即html元素）的样式，样式声明可叠加，由分号分隔</p>
+
+    <h3>样式声明格式</h3>
+    <p>属性:值;</p>
+    <ul>
+        <li>属性冒号</li>
+        <li>值分号</li>
+    </ul>
+
+    <h1>css注释和html注释不同</h1>
+    <ul>
+        <li>css注释：/*XXX*/</li>
+        <!--    $lt;是左括号   -->
+        <!--    $gt;是右括号   -->
+        <li>html注释：&lt;!-- XXX -- &gt;</li>
+    </ul>
+
+    <hr>
+
+    <!-- id选择器 -->
+    <p id= "para1">使用id选择器的html，id选择器指向#para1</p>
+    <p class="center">使用class选择器的html，class选择器指向.center</p>
+</body>
+
+</html>

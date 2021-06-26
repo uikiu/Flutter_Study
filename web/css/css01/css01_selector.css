@@ -1,0 +1,39 @@
+/* 
+css的选择器有两种
+id选择器
+class选择器
+
+一、ID选择器
+1. css中id选择器以#+名称来定义id选择器名称
+2. html元素以ID属性来设置id选择器
+
+
+
+二、class选择器
+1. css中class选择器以一个点"."+名称来定义class选择器：
+2. html元素中以class属性标识
+3. class选择器的范围：
+    3.1>class类前面指定html元素：本html元素中所有使用此class选择器实例的都会变更
+    3.2>class类千米那不指定html元素：所有html元素中所有使用此class选择器实例的都会变更
+
+*/
+
+
+#para1
+{
+    text-align: start;
+    color: red;
+}
+
+
+/* 面向所有html元素 */
+.center
+{
+    text-align: center;
+}
+
+/* 面向html元素中的p段落 */
+p.center
+{
+    text-align: center;
+}

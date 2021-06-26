@@ -1,0 +1,25 @@
+
+/* css文件不能包含任何html元素 */
+/* 分割线hr */
+
+h1 {background-color:#6495ed;}
+
+hr {
+    color: sienna;
+}
+
+p{
+    margin-left: 20px;
+}
+
+/* css背景 body选择器
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+*/
+
+body {background-color:red;}

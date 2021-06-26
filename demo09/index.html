@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        mi
+        <meta charset="utf-8">
+        <title>自定义的html和JS</title>
+        <!-- 内部样式表 -->
+        <style type="text/css">
+        h1 {
+            color: red;
+        }
+        p {
+            color: blue;
+        }
+
+        body {
+            background-color: yellow;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>自定义的html和JS</h1>
+        <p id="demo">我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本</p>
+        <button onclick="update_id_demo()">更新文本</button>
+
+
+    <script>
+        function update_id_demo() {
+			element = document.getElementById("demo");
+			element.innerHTML = "js更新html元素p id='demo'";
+		}
+    </script>
+    </body>
+</html>

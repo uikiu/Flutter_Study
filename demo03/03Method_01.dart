@@ -152,4 +152,9 @@ void showMethodAsParameter(){
   //fn1不能有括号
   fnX(fn1);
   // fnX(fn2(12));
+
+
+
+
+  
 }

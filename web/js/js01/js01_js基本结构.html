@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>android001</title>
+
+	<!-- 定义javascript脚本 -->
+	<script>
+		function displayDate() {
+			document.getElementById("demo").innerHTML = Date();
+		}
+	</script>
+
+
+
+</head>
+
+<body>
+
+	<h1>我的第一个 JavaScript 程序</h1>
+
+	<h3>js书写注意事项</h3>
+	<p>1. js是可直接内嵌到html页面中，js插入到html中后由浏览器解析执行</p>
+	<p>2. js能在页面加载时向HTML的body中写文本</p>
+	<p>3. html中js脚本需要用script包起来，js可以在header和body中。通常做法是统一处理：统一放到header中或者页面底部</p>
+
+	<h3>js交互因素</h3>
+	<p>js用于控制行为，所以通常用于变更html页面内容。所以js函数依赖于html页面元素，以及js函数定义，和触发js函数的button。总体来说：</p>
+	<ul>
+		<li>html元素展现给用户</li>
+		<li>js依赖html元素更新其内容</li>
+		<li>button按钮依赖js函数触发更新操作</li>
+	</ul>
+	<hr>
+
+	<!-- JavaScript 会在页面加载时向 HTML 的 <body> 写文本： -->
+	<script>
+		document.write("<h1>这是一个标题</h1>");
+		document.write("<p>这是一个段落</p>");
+	</script>
+
+	<!-- script修改html元素 -->
+	<p id="demo">测试demmo</p>
+	<script>
+		function update_id_demo() {
+			element = document.getElementById("demo");
+			element.innerHTML = "js更新html元素p id='demo'";
+		}
+	</script>
+
+	<!-- 点击onClick的值可以跳转到js脚本 -->
+	<button type="button" onclick="update_id_demo()">更新html内容</button>
+	<button type="button" onclick="displayDate()">显示日期</button><br>
+
+	<button type="button" onclick="alert('欢迎使用js的alert函数')">alert弹框</button><br>
+
+	<hr>
+
+	<script>
+		function switch_id_light(){
+			element = document.getElementById('light')
+			if(element.src.match("bulbon")){
+				element.src="images/pic_bulboff.gif";
+			} else {
+				element.src="images/pic_bulbon.gif";
+			}
+		}
+	</script>
+
+	<img id="light" onclick="switch_id_light()" src="images/pic_bulboff.gif" alt="暗" width="100" height="180">
+</body>
+
+</html>
