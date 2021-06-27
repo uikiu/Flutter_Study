@@ -114,7 +114,7 @@ main(List<String> args) {
   //5.5 List:数组列表
   // showList();
   //5.6 Maps:字典
-  showMaps();
+  // showMaps();
 
   //六、is关键字
   isKeywords();
@@ -259,9 +259,9 @@ void showList() {
   print('listString2 = $listString2');
 
   /* 
-  通过new创建list数组,并指定数据类型
+  通过new创建list数组已经被废弃
   */
-  List newList = List.filled(3, 'hello kitty',growable: true);
+  List newList = List.filled(1, 'hello kitty',growable: true);
   newList.add('张三');
   newList.add('李四');
   newList.add('王五');
@@ -302,8 +302,18 @@ void showList() {
   listGenerate.removeAt(1);
   print('listGenerate = $listGenerate');
 
-  //TODO List.of(Iterable<E> elements, { bool growable: true })
-  //TODO List.unmodifiable(Iterable elements)
+  List<String> listGenerateStringWithIndex = List<String>.generate(3, (index) => "str"+index.toString());
+print(listGenerateStringWithIndex);
+
+
+  //List.of(Iterable<E> elements, { bool growable: true })
+  List<String> listOf = List.of(listGenerateStringWithIndex,growable: true);
+  print("listOf="+listOf.toString());
+
+
+  //List.unmodifiable(Iterable elements)
+List<String> listUnmodifiable = List.unmodifiable(listGenerateStringWithIndex);
+print("listUnmodifiable"+listUnmodifiable.toString());
 
   //list长度
   int listFilledLength = listFilled.length;
