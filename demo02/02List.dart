@@ -15,7 +15,7 @@ void createList() {
   List<int> creatListInt_1 = [1, 2, 3];
   print('creatListInt_1 = $creatListInt_1');
   //2. 通过new创建List
-  List newList = new List<String>();
+  List newList = List.empty(growable: true);
   newList.add('张三');
   newList.add('李四');
   newList.add('王五');
